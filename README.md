@@ -82,7 +82,7 @@ Features
 
 This solution provides a single multi use command line script:
 
-* eZ Publish PHP Command Line script : `extension/ezpremoveobjectimageattributecontent/bin/php/ezpremoveobjectimageattributecontent.php`
+* eZ Publish PHP Command Line script : `extension/bcremoveobjectimageattributecontent/bin/php/bcremoveobjectimageattributecontent.php`
 
 
 Installation
@@ -92,7 +92,7 @@ Installation
 
 Run the following command from your project root to install the extension:
 
-    bash$ composer require brookinsconsulting/ezpremoveobjectimageattributecontent dev-master;
+    bash$ composer require brookinsconsulting/bcremoveobjectimageattributecontent dev-master;
 
 
 ### Extension Activation
@@ -109,31 +109,31 @@ The solution is configured to work virtually by default once properly installed.
 
 First, Run the provided and detailed script help command:
 
-    php ./extension/ezpremoveobjectimageattributecontent/bin/php/ezpremoveobjectimageattributecontent.php --help;
+    php ./extension/bcremoveobjectimageattributecontent/bin/php/bcremoveobjectimageattributecontent.php --help;
 
 **Note**: The above command documents very clearly the required / optional script parameters with examples and defaults.
 
 
 ### Example Usage: Test evaluate (mock) the removal multiple image attribute(s) image content from all versions of multiple image object(s), informational execution only, makes no change to database
 
-    php ./extension/ezpremoveobjectimageattributecontent/bin/php/ezpremoveobjectimageattributecontent.php --object-ids=126,127,180 --attribute-identifiers=image,image33 --script-verbose=true --script-verbose-level=3 --version=new --test-only;
+    php ./extension/bcremoveobjectimageattributecontent/bin/php/bcremoveobjectimageattributecontent.php --object-ids=126,127,180 --attribute-identifiers=image,image33 --script-verbose=true --script-verbose-level=3 --version=new --test-only;
 
 **Note**: Use of the `--test-only` parameter ensures that no mater which variation (parameter combinations) of the command used, the script will make no changes to any part of the database.
 
 
 ### Example Usage: Remove single image attribute image content from a single image object's current version
 
-    php ./extension/ezpremoveobjectimageattributecontent/bin/php/ezpremoveobjectimageattributecontent.php --object-ids=126 --attribute-identifiers=image --script-verbose=true --script-verbose-level=3 --version=current;
+    php ./extension/bcremoveobjectimageattributecontent/bin/php/bcremoveobjectimageattributecontent.php --object-ids=126 --attribute-identifiers=image --script-verbose=true --script-verbose-level=3 --version=current;
 
 
 ### Example Usage: Remove multiple image attribute(s) image content from all versions of multiple image object(s)
 
-    php ./extension/ezpremoveobjectimageattributecontent/bin/php/ezpremoveobjectimageattributecontent.php --object-ids=126,127,180 --attribute-identifiers=image,image33 --script-verbose=true --script-verbose-level=3 --version=all;
+    php ./extension/bcremoveobjectimageattributecontent/bin/php/bcremoveobjectimageattributecontent.php --object-ids=126,127,180 --attribute-identifiers=image,image33 --script-verbose=true --script-verbose-level=3 --version=all;
 
 
 ### Example Usage: Remove multiple image attribute(s) image content in a new version multiple image object(s)
 
-    php ./extension/ezpremoveobjectimageattributecontent/bin/php/ezpremoveobjectimageattributecontent.php --object-ids=126,127,180 --attribute-identifiers=image,image33 --script-verbose=true --script-verbose-level=3 --version=new;
+    php ./extension/bcremoveobjectimageattributecontent/bin/php/bcremoveobjectimageattributecontent.php --object-ids=126,127,180 --attribute-identifiers=image,image33 --script-verbose=true --script-verbose-level=3 --version=new;
 
 
 Troubleshooting
