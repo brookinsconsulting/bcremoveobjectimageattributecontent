@@ -1,0 +1,24 @@
+{
+    "name": "brookinsconsulting/bcremoveobjectimageattributecontent",
+    "description": "eZ Publish Legacy extension script providing a stable and flexible solution which allows the user to remove content object image attribute content on the fly by current version, all versions or in a new version. Provides for scriptable manipulation of image attribute content!",
+    "type": "ezpublish-legacy-extension",
+    "keywords": [ "eZ Publish", "content object image attribute", "image attribute", "images", "image aliases", "remove content", "versions" ],
+    "homepage": "https://github.com/brookinsconsulting/bcremoveobjectimageattributecontent",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name" : "Brookins Consulting",
+            "homepage": "http://brookinsconsulting.com",
+            "email": "info@brookinsconsulting.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.0.0",
+        "ezsystems/ezpublish-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "bcremoveobjectimageattributecontent"
+    }
+}
